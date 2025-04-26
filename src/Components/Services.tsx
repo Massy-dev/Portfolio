@@ -47,7 +47,7 @@ const Services = () => {
           </div>
           <h3 className="text-xl font-semibold mb-2 text-center">Design UI/UX</h3>
           <p className="text-sm md:text-base text-center">
-            Conception d'interfaces utilisateurs intuitives et esthétiques, adaptées à l'expérience utilisateur.
+            Conception d&apos;interfaces utilisateurs intuitives et esthétiques, adaptées à l&apos;expérience utilisateur.
           </p>
         </motion.div>
 
@@ -61,7 +61,7 @@ const Services = () => {
           </div>
           <h3 className="text-xl font-semibold mb-2 text-center">Applications Mobiles</h3>
           <p className="text-sm md:text-base text-center">
-            Développement d'applications mobiles natives et hybrides pour Android et iOS.
+            Développement d&apos;applications mobiles natives et hybrides pour Android et iOS.
           </p>
         </motion.div>
       </div>

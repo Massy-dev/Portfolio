@@ -28,7 +28,7 @@ const About = () => {
 
         {/* Texte */}
         <div>
-          <h3 className="text-2xl font-semibold mb-4">Hi There! I'm MEITE Yakouba</h3>
+          <h3 className="text-2xl font-semibold mb-4">Hi There! I&apos;m MEITE Yakouba</h3>
           <p className="text-lg font-medium mb-6">Web Developer | Data Enthusiast</p>
           <p className="text-lg leading-relaxed mb-6">
             I am a Web Developer with a strong focus on creating modern, user-centered applications. I love building clean, efficient, and performance-oriented user interfaces.

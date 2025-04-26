@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from 'next/image';
 
 // Données pour les articles de blog
 const blogPosts = [
@@ -59,10 +60,12 @@ const Blog = () => {
               viewport={{ once: true }}
             >
               <div className="relative aspect-video">
-                <img 
+                <Image 
                   src={post.image} 
                   alt={`Image illustrant l'article : ${post.title}`} 
                   className="w-full h-full object-cover"
+                  width={500}
+                  height={300}
                 />
               </div>
               <div className="p-4 sm:p-6">

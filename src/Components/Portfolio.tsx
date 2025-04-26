@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 const projects = [
   {
@@ -46,7 +47,13 @@ const Portfolio = () => {
               className="bg-[#1a1f2b] rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105"
               whileHover={{ scale: 1.05 }}
             >
-              <img src={project.image} alt={project.title} className="w-full h-48 object-cover transition-all duration-300 hover:opacity-80" />
+              <Image 
+                src={project.image} 
+                alt={project.title} 
+                className="w-full h-48 object-cover transition-all duration-300 hover:opacity-80" 
+                width={500}
+                height={300}
+              />
               <div className="p-4 text-center">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-sm mb-4">{project.description}</p>
