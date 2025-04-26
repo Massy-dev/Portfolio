@@ -22,7 +22,7 @@ const Testimonials = () => {
           {/* Témoignage exemple */}
           <div className="bg-[#1a2238] p-6 rounded-xl shadow-md">
             <p className="italic mb-4">
-              "Un développeur très professionnel, à l&apos;écoute et réactif. Le rendu a dépassé mes attentes."
+              Un développeur très professionnel, à l&apos;écoute et réactif. Le rendu a dépassé mes attentes.
             </p>
             <h4 className="font-semibold text-[#fec544]">Jean Dupont</h4>
             <span className="text-sm text-gray-400">CEO chez Exemple Inc.</span>

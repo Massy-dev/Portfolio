@@ -38,7 +38,7 @@ const Resume = () => {
                   <div className="absolute left-[-30px] top-[5px] w-3 h-3 rounded-full bg-[#fec544]" />
                   <span className="text-sm text-[#fec544]">2020 - 2023</span>
                   <h4 className="text-xl font-bold">Licence en Informatique</h4>
-                  <p className="text-gray-400">Université de la Côte d'Ivoire</p>
+                  <p className="text-gray-400">Université de la Côte d&apos;Ivoire</p>
                 </div>
                 <div className="relative">
                   {/* Point */}
