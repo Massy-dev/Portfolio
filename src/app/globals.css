@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+   
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -19,8 +20,52 @@
   }
 }
 
+/* styles/globals.css */
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overscroll-behavior: smooth;
+  scroll-behavior: smooth;
+  background-color: #0a101e;
+  color: #ffffff;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Abeezee', sans-serif;
+  margin: 0;
+}
+
+.sidebar {
+  background-color: #1a2133;
+  color: white;
+  padding-top: 30px;
+}
+
+.main-content {
+  padding-left: 250px; /* Laisser de la place pour la sidebar */
+  padding-top: 20px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+nav ul li a:hover {
+  background-color: #fec544;
+  color: #0a101e;
+}
+html {
+  scroll-behavior: smooth;
 }
