@@ -1,13 +1,38 @@
 "use client";
 
 import { FaCode, FaDesktop, FaMobileAlt } from "react-icons/fa";
+import { Code, Smartphone, Layout, Database } from "lucide-react"; 
 import { motion } from "framer-motion";
+
+const services = [
+  {
+    title: "Création de sites vitrines modernes",
+    description: "Je conçois des sites web élégants et performants pour représenter votre entreprise et attirer vos clients.",
+    icon: <Layout size={40} />,
+  },
+  {
+    title: "Développement d'applications web avancées",
+    description: "Je développe des applications web robustes et sur mesure en utilisant Next.js et les dernières technologies.",
+    icon: <Code size={40} />,
+  },
+  {
+    title: "Développement d'applications mobiles",
+    description: "Je réalise vos applications mobiles Android et iOS avec Flutter pour une expérience fluide et rapide.",
+    icon: <Smartphone size={40} />,
+  },
+  {
+    title: "Création de bases de données & APIs",
+    description: "Je crée des bases de données efficaces et sécurisées, connectées à des APIs performantes selon vos besoins.",
+    icon: <Database size={40} />,
+  },
+];
 
 const Services = () => {
   return (
     <motion.section
       id="services"
-      className="py-20 px-4 md:px-12 bg-[#0a101e] text-white"
+      className="py-20 px-1 md:mx-55 bg-[#0a101e] text-white"
+      
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
@@ -15,56 +40,29 @@ const Services = () => {
     >
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Mes <span className="text-[#fec544]">Services</span>
+           <span className="text-[#fec544]">Mes Services</span>
+          <div className="w-24 h-1 bg-yellow-400 mx-auto mt-4" />
         </h2>
         <p className="text-lg md:text-xl">
           Découvrez mes services professionnels et comment je peux vous aider à réaliser vos projets.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Service 1 */}
-        <motion.div
-          className="service-card p-6 bg-[#1a2133] rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
-          whileHover={{ scale: 1.05 }}
-        >
-          <div className="flex justify-center mb-6">
-            <FaCode className="text-4xl mb-4 text-[#fec544]" />
-          </div>
-          <h3 className="text-xl font-semibold mb-2 text-center">Développement Web</h3>
-          <p className="text-sm md:text-base text-center">
-            Création de sites web modernes et performants, adaptés à vos besoins et à votre identité.
-          </p>
-        </motion.div>
-
-        {/* Service 2 */}
-        <motion.div
-          className="service-card p-6 bg-[#1a2133] rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
-          whileHover={{ scale: 1.05 }}
-        >
-          <div className="flex justify-center mb-6">
-            <FaDesktop className="text-4xl mb-4 text-[#fec544]" />
-          </div>
-          <h3 className="text-xl font-semibold mb-2 text-center">Design UI/UX</h3>
-          <p className="text-sm md:text-base text-center">
-            Conception d&apos;interfaces utilisateurs intuitives et esthétiques, adaptées à l&apos;expérience utilisateur.
-          </p>
-        </motion.div>
-
-        {/* Service 3 */}
-        <motion.div
-          className="service-card p-6 bg-[#1a2133] rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
-          whileHover={{ scale: 1.05 }}
-        >
-          <div className="flex justify-center mb-6">
-            <FaMobileAlt className="text-4xl mb-4 text-[#fec544]" />
-          </div>
-          <h3 className="text-xl font-semibold mb-2 text-center">Applications Mobiles</h3>
-          <p className="text-sm md:text-base text-center">
-            Développement d&apos;applications mobiles natives et hybrides pour Android et iOS.
-          </p>
-        </motion.div>
-      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {services.map((service, index) => (
+            <motion.div 
+              key={index}
+              whileHover={{ scale: 1.05 }}
+              className="bg-[#131c31] border border-[#232935] rounded-lg p-8 shadow-lg hover:shadow-[#fec544]/50 transition-all duration-300"
+            >
+              <div className="flex items-center justify-center mb-6 text-[#fec544]">
+                {service.icon}
+              </div>
+              <h3 className="text-xl text-center font-semibold mb-4">{service.title}</h3>
+              <p className="text-gray-400 text-center">{service.description}</p>
+            </motion.div>
+          ))}
+        </div>
     </motion.section>
   );
 };

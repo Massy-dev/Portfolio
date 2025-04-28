@@ -26,7 +26,7 @@ export default function Home() {
       <Resume />
       <Portfolio />
       <Blog />
-      <Testimonials />
+      
       
 
       <Contact />

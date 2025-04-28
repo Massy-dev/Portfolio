@@ -22,10 +22,10 @@ const Sidebar = () => {
       {/* Barre du haut mobile */}
       <div className="md:hidden  fixed top-0 left-0 right-0 bg-[#0a101e] flex justify-between items-center h-17 px-6 py-6 z-50 shadow-md">
         <Image
-          src="/MEITE.jpeg"
+          src="/meite1.png"
           alt="Logo"
-          width={60}
-          height={60}
+          width={50}
+          height={50}
           className="rounded-full object-cover border-2 border-[#232935] p-1"
         />
         <span className="font-bold text-[#fec544]">MEITE Yakouba</span>
@@ -38,11 +38,11 @@ const Sidebar = () => {
       <aside className="hidden md:flex fixed top-0 left-0 h-full w-64 bg-[#0a101e] border-r border-[#232935] flex-col items-center py-8 z-40">
         <div className="mb-10">
           <Image
-            src="/MEITE.jpeg"
+            src="/meite1.png"
             alt="Logo"
             width={200}
             height={200}
-            className="rounded-full object-contain border-3 border-[#232935] p-1"
+            className="rounded-full object-cover border-3 border-[#232935] p-1"
           />
         </div>
         <hr className="w-64 border-t border-[#232935] mb-2" />

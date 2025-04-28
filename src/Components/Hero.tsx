@@ -1,46 +1,49 @@
-// components/HeroSection.tsx
 "use client";
 
 import { motion } from "framer-motion";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section id="hero" className="w-full  h-screen py-24 px-4 md:px-12 bg-transparent text-white relative flex items-center justify-center">
-      <div className="absolute inset-0 z-10 bg-cover bg-center" 
-      style={{ backgroundImage: 'url("/digitization.jpg")' ,
-        backgroundPosition: 'center top',
-        backgroundSize: 'cover',
-        
-        opacity: 0.2,
-      }} />
+    <section id="home" className="min-h-screen flex flex-col justify-center items-center text-center bg-[#0a101e] text-gray-300 px-6">
+
+    <div className="absolute inset-0 z-10 bg-cover bg-center" 
+          style={{ backgroundImage: 'url("/digitization.jpg")' ,
+            backgroundPosition: 'center top',
+            backgroundSize: 'cover',
+            
+            opacity: 0.1,
+          }} />
       
-      <motion.div
-        className="relative z-10 max-w-3xl mx-auto text-center"
-        initial={{ opacity: 0, y: 40 }}
+
+      <motion.h1 
+        initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.7 }}
+        className="text-4xl md:text-6xl font-bold mb-6 text-[#fec544]"
       >
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-tight">
-          Salut, je suis <span className="text-[#fec544]">Ton Nom</span>
-        </h1>
-        <h2 className="text-2xl md:text-3xl font-medium mb-6">
-          Développeur Web | Data Enthusiast
-        </h2>
-        <p className="mb-8 text-lg md:text-xl">
-          Je conçois des applications modernes, performantes et orientées résultats.
-        </p>
-        <div className="flex justify-center gap-6 text-[#fec544] text-2xl transition duration-300 ease-in-out hover:text-[#fff]">
-          <a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="hover:scale-110 transition-transform" />
-          </a>
-          <a href="https://github.com/ton-utilisateur" target="_blank" rel="noopener noreferrer">
-            <FaGithub className="hover:scale-110 transition-transform" />
-          </a>
-          <a href="mailto:ton.email@example.com">
-            <FaEnvelope className="hover:scale-110 transition-transform" />
-          </a>
-        </div>
+        🚀 Transformons vos idées en projets réels
+      </motion.h1>
+
+      <motion.p 
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4, duration: 0.7 }}
+        className="text-gray-400 max-w-2xl mb-8 text-lg md:text-xl"
+      >
+        Développeur web & mobile, je crée des solutions digitales sur-mesure qui propulsent votre business vers le succès.
+      </motion.p>
+
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.6, duration: 0.5 }}
+      >
+        <Link href="#contact">
+          <button className="bg-[#fec544] hover:bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300">
+            Discutons de votre projet
+          </button>
+        </Link>
       </motion.div>
     </section>
   );
