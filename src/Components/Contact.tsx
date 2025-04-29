@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from "react";
-/*import emailjs from "@emailjs/browser";*/
+import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
@@ -14,37 +14,33 @@ const Contact = () => {
     user_message: "",
   });
 
-  /*const [success, setSuccess] = useState(false);
-  const [error, setError] = useState(false);*/
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  /*const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs
-      .send(
-        "service_hxtl8i2",  // Remplacer ici
-        "template_m6eyvye", // Remplacer ici
+    try {
+      const result = await emailjs.send(
+        "service_hxtl8i2",
+        "template_m6eyvye",
         formData,
-        "XYgcmANRUQSkUL4ft"   // Remplacer ici
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setSuccess(true);
-          setError(false);
-          setFormData({ user_name: "", user_email: "", user_message: "" });
-        },
-        (error) => {
-          console.log(error.text);
-          setError(true);
-          setSuccess(false);
-        }
+        "XYgcmANRUQSkUL4ft"
       );
-  };*/
+      console.log(result.text);
+      setSuccess(true);
+      setError(false);
+      setFormData({ user_name: "", user_email: "", user_message: "" });
+    } catch (error) {
+      console.log(error);
+      setError(true);
+      setSuccess(false);
+    }
+  };
 
   return (
     <motion.section id="contact" className="py-20 px-4 md:px-12 "
@@ -74,7 +70,7 @@ const Contact = () => {
 
           {/* Formulaire de contact */}
           <div className="bg-transparent p-6 rounded-lg">
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <input
               type="text"
@@ -111,8 +107,8 @@ const Contact = () => {
           >
             Envoyer
           </button>
-          {/*{success && <p className="text-green-400">Message envoyé avec succès !</p>}
-          {error && <p className="text-red-500">Oups ! Une erreur s'est produite. Réessayez.</p>}*/}
+          {success && <p className="text-green-400">Message envoyé avec succès !</p>}
+          {error && <p className="text-red-500">Oups ! Une erreur s&apos;est produite. Réessayez.</p>}
         </form>
           </div>
 
@@ -120,7 +116,7 @@ const Contact = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold mb-4">Contact Info</h3>
             <p className="text-lg mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla tincidunt id faucibus sed suscipit feugiat.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc ligula nulla tincidunt id faucibus sed suscipit feugiat.
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
@@ -143,8 +139,7 @@ const Contact = () => {
                 <FaMapMarkerAlt className="text-[#fec544] text-2xl" />
                 <div className="text-white">
                   <p>Address</p>
-                  <p>Cocody, Abidjan, Côte d'Ivoire</p>
-                  <p>Abidjan, Côte d'Ivoire</p>
+                  <p>Cocody, Abidjan, Côte d&apos;Ivoire</p>
                 </div>
               </div>
             </div>
