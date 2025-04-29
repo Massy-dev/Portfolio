@@ -5,6 +5,13 @@ import "./globals.css"
 import Sidebar from "@/Components/SideBar" // On suppose que tu as un composant Sidebar
 import { motion } from "framer-motion";
 
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({ 
+  subsets: ['latin'],
+  weight: ['400', '600'],
+  variable: '--font-poppins',
+});
 
 
 const Layout = ({ children }: { children: React.ReactNode }) => {

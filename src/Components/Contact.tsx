@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
+/*import emailjs from "@emailjs/browser";*/
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
@@ -14,14 +14,14 @@ const Contact = () => {
     user_message: "",
   });
 
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState(false);
+  /*const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);*/
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  /*const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     emailjs
@@ -44,7 +44,7 @@ const Contact = () => {
           setSuccess(false);
         }
       );
-  };
+  };*/
 
   return (
     <motion.section id="contact" className="py-20 px-4 md:px-12 "
@@ -111,8 +111,8 @@ const Contact = () => {
           >
             Envoyer
           </button>
-          {success && <p className="text-green-400">Message envoyé avec succès !</p>}
-          {error && <p className="text-red-500">Oups ! Une erreur s'est produite. Réessayez.</p>}
+          {/*{success && <p className="text-green-400">Message envoyé avec succès !</p>}
+          {error && <p className="text-red-500">Oups ! Une erreur s'est produite. Réessayez.</p>}*/}
         </form>
           </div>
 

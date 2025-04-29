@@ -1,6 +1,6 @@
 "use client";
 
-import { FaCode, FaDesktop, FaMobileAlt } from "react-icons/fa";
+//import { FaCode, FaDesktop, FaMobileAlt } from "react-icons/fa";
 import { Code, Smartphone, Layout, Database } from "lucide-react"; 
 import { motion } from "framer-motion";
 
