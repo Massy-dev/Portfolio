@@ -17,7 +17,7 @@ const poppins = Poppins({
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     
-      <html lang="fr">
+      <html lang="fr" className={poppins.className}>
         <body className="bg-[#0a101e] text-white">
         <div className="flex min-h-screen">
           {/* Sidebar à gauche */}
