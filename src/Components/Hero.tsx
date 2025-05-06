@@ -34,17 +34,13 @@ const Hero = () => {
         Développeur web & mobile, je crée des solutions digitales sur-mesure qui propulsent votre business vers le succès.
       </motion.p>
 
-      <motion.div 
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.6, duration: 0.5 }}
-      >
-        <Link href="#contact">
-          <button className="bg-[#fec544] hover:bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300">
+      
+        <Link href="#contact" className="bg-[#fec544] z-10 hover:bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300">
+         
             Discutons de votre projet
-          </button>
+        
         </Link>
-      </motion.div>
+      
     </section>
   );
 };

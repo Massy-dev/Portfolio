@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -13,7 +14,7 @@ const About = () => {
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="flex-shrink-0"
+          className="flex-shrink-0 rounded-full bg-black"
         >
           <Image 
             src="/meite3.png" 
@@ -42,11 +43,11 @@ const About = () => {
             Que vous souhaitiez un site web impactant, une application mobile intuitive ou un SaaS puissant, 
             je suis prêt à concrétiser vos projets avec rigueur et créativité.
           </p>
-          <a href="#portfolio">
-            <button className="bg-[#fec544] hover:bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300">
+          <Link href="#portfolio" className="bg-[#fec544] hover:bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300">
+            
               Voir mes projets
-            </button>
-          </a>
+          
+          </Link>
         </motion.div>
 
       </div>

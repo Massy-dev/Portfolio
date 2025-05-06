@@ -6,20 +6,20 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const blogPosts = [
   {
-    title: 'Pourquoi avoir un site web en 2025 est indispensable pour votre entreprise',
-    description: 'Découvrez comment un site professionnel booste votre crédibilité, génère plus de clients et vous distingue de vos concurrents.',
+    title: 'Débuter en HTML / CSS',
+    description: 'Découvrez dans cette vidéo comment créer une page web en HTML / CSS.',
     imageUrl: '/COMMENTCREER.png',
     link: 'https://www.youtube.com/watch?v=A465LzzEoAA&t=2919s',
   },
   {
-    title: 'Applications mobiles : la clé pour atteindre vos clients partout',
-    description: 'Les applications mobiles permettent une relation directe et personnalisée avec vos utilisateurs. Voici pourquoi vous devez investir.',
+    title: 'Maîtrisez la création de blog avec le Framework Bootstrap 5',
+    description: 'Découvrez dans ce tutoriel vidéo complet comment maîtriser la création de blogs avec Bootstrap.',
     imageUrl: '/htmlcss.jpg',
     link: 'https://www.youtube.com/watch?v=BI8Z547DkvY&t=2015s',
   },
   {
-    title: 'Les dernières tendances en développement web et mobile en 2025',
-    description: 'Des Progressive Web Apps aux super applications mobiles, restez à jour sur les tendances qui transforment le digital.',
+    title: 'Comment créer un blog avec PHP/MYSQL', 
+    description: 'Dans cette vidéo vous apprendrez à créer un article  avec le minimum nécéssaire en PHP : Enregistrer un article dans la base de donnée .',
     imageUrl: '/maxresdefault.jpg',
     link: 'https://www.youtube.com/watch?v=00sg5xTs6FU',
   },
@@ -30,7 +30,7 @@ const Blog = () => {
     <section id="blog" className="bg-[#0a0a23] py-20 px-5">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-[#fec544] mb-10 text-center">
-          Derniers Articles
+          Mes formations
           <div className="w-24 h-1 bg-yellow-400 mx-auto mt-4" />
         </h2>
 

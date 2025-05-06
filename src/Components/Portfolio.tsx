@@ -4,25 +4,25 @@ import Image from 'next/image';
 
 const projects = [
   {
-    title: "Projet 1",
-    description: "Une application moderne de gestion.",
-    image: "/images/projet1.jpg",
-    github: "https://github.com/ton-user/projet1",
-    demo: "https://projet1.netlify.app",
+    title: "Imperial Rent",
+    description: "Une landing page pour un site de location de voiture.",
+    image: "/imperila2.jpg",
+    github: "https://github.com/Massy-dev/imperial-rent-landing",
+    demo: "https://imperial-rent-landing.vercel.app/",
   },
   {
-    title: "Projet 2",
-    description: "Un site vitrine interactif.",
-    image: "/images/projet2.jpg",
-    github: "https://github.com/ton-user/projet2",
-    demo: "https://projet2.netlify.app",
+    title: "Dev Nation",
+    description: 'Un reseau social pour les développeurs \n(en cours de développement).',
+    image: "/DevNation.jpg",
+    github: "https://github.com/Massy-dev/dev-nation",
+    demo: "https://dev-nation.vercel.app/",
   },
   {
-    title: "Projet 3",
-    description: "Un site vitrine interactif.",
-    image: "/images/projet2.jpg",
-    github: "https://github.com/ton-user/projet2",
-    demo: "https://projet2.netlify.app",
+    title: "Clean Auto",
+    description: "Une application de gestion de lavage automobile (en cours de développement).",
+    image: "/Lavage.jpg",
+    github: "https://github.com/Massy-dev/CleanAuto",
+    demo: "https://clean-auto-nine.vercel.app/login",
   },
   // Ajoute plus de projets ici
 ];
@@ -45,7 +45,7 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="bg-[#1a1f2b] rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105"
+              className="bg-[#1a1f2b]  rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105"
               whileHover={{ scale: 1.05 }}
             >
               <Image 

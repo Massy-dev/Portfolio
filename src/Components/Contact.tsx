@@ -115,9 +115,7 @@ const Contact = () => {
           {/* Informations de contact */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold mb-4">Contact Info</h3>
-            <p className="text-lg mb-6">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc ligula nulla tincidunt id faucibus sed suscipit feugiat.
-            </p>
+            
             <div className="space-y-4">
               <div className="flex items-center gap-4">
                 <FaEnvelope className="text-[#fec544] text-2xl" />
