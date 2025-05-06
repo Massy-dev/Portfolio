@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Imperial Rent",
     description: "Une landing page pour un site de location de voiture.",
-    image: "/imperila2.jpg",
+    image: "/land.jpg",
     github: "https://github.com/Massy-dev/imperial-rent-landing",
     demo: "https://imperial-rent-landing.vercel.app/",
   },

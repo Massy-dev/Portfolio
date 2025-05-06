@@ -43,7 +43,7 @@ const Blog = () => {
                   alt={post.title}
                   layout="fill"
                   objectFit="cover"
-                  className="rounded-t-lg"
+                  className="rounded-t-lg" 
                 />
               </div>
               <div className="p-6">
