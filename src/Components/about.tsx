@@ -14,7 +14,7 @@ const About = () => {
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="flex-shrink-0 rounded-full bg-black"
+          className="flex-shrink-0 rounded-full bg-[#0a0a23]"
         >
           <Image 
             src="/meite3.png" 
