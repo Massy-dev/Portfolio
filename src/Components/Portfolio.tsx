@@ -27,7 +27,7 @@ const projects = [
   {
     title: "Automobile Premium & Luxe",
     description: "Une landing page dans le secteur de l'automobile de lux.",
-    image: "/Lavage.jpg",
+    image: "/mlmLanding.jpg",
     github: "https://github.com/Massy-dev/MayuyaLarr",
     demo: "https://mayuya-larr.vercel.app/",
   },
