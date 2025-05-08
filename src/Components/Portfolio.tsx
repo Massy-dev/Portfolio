@@ -24,6 +24,13 @@ const projects = [
     github: "https://github.com/Massy-dev/CleanAuto",
     demo: "https://clean-auto-nine.vercel.app/login",
   },
+  {
+    title: "Automobile Premium & Luxe",
+    description: "Une landing page dans le secteur de l'automobile de lux.",
+    image: "/Lavage.jpg",
+    github: "https://github.com/Massy-dev/MayuyaLarr",
+    demo: "https://mayuya-larr.vercel.app/",
+  },
   // Ajoute plus de projets ici
 ];
 
