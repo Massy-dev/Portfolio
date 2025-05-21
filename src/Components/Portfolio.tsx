@@ -31,6 +31,13 @@ const projects = [
     github: "https://github.com/Massy-dev/MayuyaLarr",
     demo: "https://mayuya-larr.vercel.app/",
   },
+  {
+    title: "Boli conseil",
+    description: "Cabinet de conseil juridique dédié aux entreprises et aux particuliers..",
+    image: "/BoliConseil.jpg",
+    github: "https://github.com/Massy-dev/Boli-conseil",
+    demo: "https://boli-conseil-kth3.vercel.app/",
+  },
   // Ajoute plus de projets ici
 ];
 
