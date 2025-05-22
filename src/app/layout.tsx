@@ -2,9 +2,9 @@
 
 "use client"
 import "./globals.css"
-import Sidebar from "@/Components/SideBar" // On suppose que tu as un composant Sidebar
+import Sidebar from "@/Components/SideBar" 
 import { motion } from "framer-motion";
-
+import { Analytics } from "@vercel/analytics/react";
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({ 
@@ -18,6 +18,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     
       <html lang="fr" className={poppins.className}>
+        <head>
+          <link rel="canonical" href="https://portfolio-five-beta-36.vercel.app/" />
+        </head>
         <body className="bg-[#0a101e] text-white">
         <div className="flex min-h-screen">
           {/* Sidebar à gauche */}
@@ -33,6 +36,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 transition={{ duration: 0.6 }}
               >
             {children}
+            <Analytics />
           </motion.div>
         </div>
         </body>
