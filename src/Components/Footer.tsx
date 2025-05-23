@@ -39,7 +39,7 @@ const Footer = () => {
       {showButton && (
         <div className="fixed bottom-6 rounded-full right-6 z-50">
           <a
-              href="#hero"
+              href="#home"
               className="w-10 h-10 flex items-center justify-center bg-[#fec544] text-black rounded-full shadow-md hover:bg-white transition-all duration-300 border border-white/20 backdrop-blur-md fixed bottom-6 right-6 z-50"
               aria-label="Retour en haut"
             >
