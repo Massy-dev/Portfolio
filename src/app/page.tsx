@@ -1,12 +1,12 @@
-import Hero from "../components/Hero"
-import About from "../components/about"
-import Services from "../components/Services"
-import Portfolio from "../components/Portfolio"
-import Contact from "../components/Contact"
-import Footer from "../components/Footer"
-import Skills from "../components/skills"
-import Resume from "../components/resume"
-import Blog from "../components/Blog"
+import Hero from "@/components/Hero"
+import About from "@/components/about"
+import Services from "@/components/Services"
+import Portfolio from "@/components/Portfolio"
+import Contact from "@/components/Contact"
+import Footer from "@/components/Footer"
+import Skills from "@/components/skills"
+import Resume from "@/components/resume"
+import Blog from "@/components/Blog"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

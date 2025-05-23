@@ -2,7 +2,7 @@
 
 "use client"
 import "./globals.css"
-import Sidebar from "../components/SideBar" 
+import Sidebar from "@/components/SideBar" 
 import { motion } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
 import { Poppins } from 'next/font/google';
